@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ของกินของขวัญ : About</title>
   <style type="text/css">
-		
+hr{
+    border-bottom:1px dotted #AAA;
+}		
   @font-face {
    font-family: defaultFont;
    src: url('Circular.ttf');
@@ -20,10 +22,11 @@
  }
  h2 {
   font-size: 4em;
-  border-bottom:1px dotted #AAA;
+  
+  
 }
 p {
-  font-size: 3em;
+  font-size: 2em;
 }
 li {
   font-size: 3em;
@@ -49,11 +52,16 @@ body{
             margin: 5px;
             border-radius:10px;
         }
-        ul{
-        list-style-image: url('li1.png');
-        }
 
+.detail{
+    display: inline-block;
+    width: 250px;
+    margin: 50px 20px;
+    vertical-align: top;
+}
+.detail h2{
 
+}
 
 .coverBackground{
   background-image: url("cover2.jpg");
@@ -69,6 +77,11 @@ background-size: cover;
 
 .cover h1{
 color: white;
+
+}
+.cover h2{
+color: white;
+
 }
 .cover {
   height:100vh;
@@ -76,35 +89,49 @@ color: white;
 </style>
 </head>
 <body>
-
+<section id='cover'>
    <div class='cover'>
       <div class='coverBackground'></div>
       <div class='logo'><img src="logo.jpg" alt='ของกินของขวัญ'></div>
-      <h1>"คิดถึงของกิน คิดถึงของกินของขวัญ"</h1>
+      <h1>ของกินของขวัญ</h1>
+      <h2>"คิดถึงของกิน คิดถึงของกินของขวัญ"</h2>
     </div> 
+</section>
+<section id='container'>
   <div class="container">
    
     <div class='content'>
       <div class='historical'>
-        <h2>ประวัติความเป็นมา</h2>
+        <h1>ประวัติความเป็นมา</h1>
         <p>เนื่องจากเพื่อนๆมักจะเข้ามาถามหาร้านของกินกับขวัญฤทัยที่เป็นสมาชิกคนนึงในกลุ่ม ขวัญฤทัยจึงเปิดเป็นเพจใน facebook ชื่อเพจของกินของขวัญ ซึ่งเป็นเพจรวบรวมร้านอาหารที่น่าสนใจและร้านอาหารที่ขวัญฤทัยเคยไปชิม แต่หลังจากที่เปิดเพจของกินของขวัญแล้ว พบว่ายังมีเพื่อนๆเข้ามาสอบถามหาร้านของกินอยู่ดี เพื่อลดภาระในการตอบคำถามและเพื่อความสะดวกสบายรวดเร็ว จึงมีความคิดที่จะเปิดเป็น web application ที่มีลักษณะเป็น expert system ที่คอยแนะนำร้านอาหารให้กับผู้ที่สนใจ</p>
       </div>
-      <div class='function'><h2>Functions</h2>
-        <ul>
-          <li>ดูรีวิวอาหาร</li>
-          <p>สามารถอ่านรีวิวอาหารได้จากlink บทความที่มีการไปชิมแล้วได้</p>
-          <li>Live Chat</li>
-          <p>มีระบบlive chat สามารถพูดคุยขอคำแนะนำในกรณีที่ขวัญฤทัยออนไลน์อยู่ได้โดยตรง</p>
-          <li>Chat with Robot</li>
-          <p>ในกรณีที่ขวัญฤทัยไม่อยู่ สามารถสอบถามข้อมูลร้านอาหารกับขวัญฤบอทแทนได้นะ</p>
-          <li>แผนที่</li>
-          <p>แสดงแผนที่ร้านอาหารที่แนะนำได้</p>
-        </ul>
-        <h2>Killing Feature</h2>
-        <p>สำหรับเว็บไซต์แนะนำร้านอาหารทั่วไป จะเน้นการprovide ข้อมูลให้กับผู้ใช้ มากกว่าการแนะนำชี้แนะโดยตรง ซึ่งทาง web application ของเราจะมี feature ที่เหนือกว่า ด้วยการแนะนำเหมือนกับเพื่อนๆแนะนำร้านอาหารที่อร่อยให้แก่กัน</p>
+      <hr/>
+      <div class='function'><h1>คุณสมบัติ</h1>
+        <div class='detail'>
+            <span class='review-icon'></span>
+          <h2>ดูรีวิวอาหาร</h2>
+          <p>สามารถอ่านรีวิวอาหารได้จาก link บทความที่มีการไปชิมแล้วได้</p>
+        </div>
+        <div class='detail'>
+          <h2>Live Chat</h2>
+          <p>มีระบบ live chat สามารถพูดคุยขอคำแนะนำในกรณีที่ขวัญฤทัยออนไลน์อยู่ได้โดยตรง</p>
+        </div>
+        <div class='detail'>
+          <h2>Chat with Robot</h2>
+          <p>ในกรณีที่ขวัญฤทัยไม่อยู่ สามารถสอบถามข้อมูลร้านอาหารกับขวัญฤบอท (โรบอทตอบคำถาม) แทนได้นะ</p>
+        </div>
+        <div class='detail'>
+          <h2>แผนที่</h2>
+          <p>แสดงแผนที่ร้านอาหารที่ขวัญฤทัยแนะนำเพื่อให้ไปถึงได้อย่างง่ายดาย</p>
+
+        </div>
+
+
       </div>
+      <hr/>
     </div>
   </div>
+ </section> 
   <footer>
 
 </footer>
